@@ -26,7 +26,8 @@ From you box account, click in the `...` symbol, `More Actions` and `Launch Flow
 Click in `CONFIRM FLOW ASSIGNATION` you will see  `Your Flow have been assigned! Please close this tab.`
 Download the file that you have select, and refresh the page. The file should have two new task. One with name webhook-target-id and the other with the webhook-target-type.
 
-**Example: Create Task and Assignment **
+**Example: Create Task and Assignment**
+
 Import the flow (example-create-task-and-assignment.json), Run the flow.
 You will need to type the *id of a file from box, and the email of someone of your box organization.
 
