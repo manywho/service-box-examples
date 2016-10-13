@@ -5,7 +5,7 @@ These flows are examples of how to use Box with ManyWho.
 
 ## Usage
 
-**Upload a file Example**
+**Example: Upload File**
 
 Import the flow (example-upload-file.json) into your ManyWho account, you will need an account into box.
 Run the flow and upload a file, you will be able to see the properties of the file, and also check that the file will be upload in you root folder in box.
