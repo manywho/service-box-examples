@@ -14,17 +14,17 @@ Run the flow and upload a file, you will be able to see the properties of the fi
 
 Import the flow (example-listener.json) and run the flow, you will need to Grant access to Box.
 You will be asked to "Insert File ID From Box" get the *id of one of your files from box, and paste it at the input field in your flow.
-Click in `Go`, you will see the loading symbol (with message `Waiting for step: Load File: with listener`). When you download that file the flow will continue and will show `The File have been downloaded !!!`
+Click in `Go`, you will see the loading symbol (with message `Waiting for step: Load File with Listener`). When you download that file the flow will continue and will show `The File have been downloaded !!!`
 
 **Example: Launch Flow From Box**
 
 For this example is needed an Enterprise Account in Box.
-Import the flow (example-launch-flow-from-box.json), Update the value `Enterprise Id` with your own Enterprise Id. And after update the service.
+Import the flow (example-launch-flow-from-box.json), Update the value `Enterprise ID` with your own Enterprise Id. And after update the service.
 You should authorize manywho_server-to-server and install https://app.box.com/services/manywho (follow instructions in the wiki)
 Click in run flow and get the url it should look like this: https://flow.manywho.com/f06c20ee-3702-466c-8437-9b399673f773/play/default?flow-id=yyyy&flow-version-id=xxx
 From you box account, click in the `...` symbol, `More Actions` and `Launch Flow ManyWho (directly)` in the ManyWho Flow paste the url copied in the step before, and in Event Trigger type `FILE.DOWNLOADED`.
 Click in `CONFIRM FLOW ASSIGNATION` you will see  `Your Flow have been assigned! Please close this tab.`
-Download the file that you have select, and refresh the page. The file should have two new task. One with name webhook-target-id and the other with the webhook-target-type.
+Download the file that you have select, and refresh the page. The file should have two new task. One with the value of the target id and the other with the value of the target type (in this case "file").
 
 **Example: Create Task and Assignment**
 
