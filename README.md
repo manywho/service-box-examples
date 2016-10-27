@@ -20,7 +20,7 @@ Click in `Go`, you will see the loading symbol (with message `Waiting for step: 
 
 For this example is needed an Enterprise Account in Box.
 Import the flow (example-launch-flow-from-box.json), Update the value `Enterprise ID` with your own Enterprise Id. And after update the service.
-You should authorize manywho_server-to-server and install https://app.box.com/services/manywho (follow instructions in the wiki)
+You should authorize manywho_server-to-server and install https://app.box.com/services/manywho (follow instructions in the [wiki](https://github.com/manywho/service-box/wiki))
 Click in run flow and get the url it should look like this: https://flow.manywho.com/f06c20ee-3702-466c-8437-9b399673f773/play/default?flow-id=yyyy&flow-version-id=xxx
 From you box account, click in the `...` symbol, `More Actions` and `Launch Flow ManyWho (directly)` in the ManyWho Flow paste the url copied in the step before, and in Event Trigger type `FILE.DOWNLOADED`.
 Click in `CONFIRM FLOW ASSIGNATION` you will see  `Your Flow have been assigned! Please close this tab.`
@@ -34,6 +34,16 @@ You will need to type the *id of a file from box, and the email of someone of yo
 *How to get the **id of a file from Box**: 
 
 Click in one of your box files the url should look like https://app.box.com/files/0/f/0/1/f_97231111234, you should copy the number after the f_ (in this example is `97231111234`)
+
+**Example: Metadata Load and Save**
+
+For this example is needed an Enterprise Account in Box.
+Import the flow (example-metadata-load-and-save.json), Update the value `Enterprise ID` with your own Enterprise Id. And after update the service.
+You should authorize manywho_server-to-server and install https://app.box.com/services/manywho (follow instructions in the [wiki](https://github.com/manywho/service-box/wiki))
+We need to create a metadata called Contract at the [metadata section](https://app.box.com/master/metadata/templates), create an Attribute with name `Status` with Format Dropdown, and add two Options `Signed` and `Not Signed`.
+Assign the metadata to some of your files (recommended more than one).
+Run the ManyWho Flow. It will show a list of all your contracts and also you will be able to modify the status for this contracts, you will see that the status is reflected also in the files in your box account.
+
 
 ### More info
 
